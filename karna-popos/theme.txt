@@ -1,0 +1,53 @@
+# Karna PopOS GRUB Theme
+#
+# Written by pk8742
+# Repository: https://github.com/pk8742/karna-popos/
+
+# Global properties
+
+desktop-image: "background.png"
+terminal-font: "RobotoSlab-Regular"
+terminal-box: "terminal_box_*.png"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
+# terminal-border: "0"
+
+# Boot menu styling
+
++ boot_menu {
+    menu_pixmap_style = "boot_menu_*.png"
+    left = 10%
+    width = 45%
+    top = 10%
+    height = 40%
+    item_font = "RobotoSlab-Regular"
+    item_color = "#bdc3c7"
+    selected_item_color = "#ecf0f1"
+    icon_width = 32
+    icon_height = 32
+    item_icon_space = 10
+    item_height = 40
+    item_padding = 2
+    item_spacing = 10
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = true
+    scrollbar_width = 10
+    scrollbar_thumb = "slider_*.png"
+}
+
+# Progress bar styling
+
++ progress_bar {
+    id = "__timeout__"
+    left = 10%
+    width = 60%
+    top = 75%
+    height = 20
+    text = "$ Booting into selected OS in %d s"
+    text_color = "#ecf0f1"
+    font = "RobotoSlab-Regular"
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_highlight_*.png"
+}
